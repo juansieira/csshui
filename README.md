@@ -2,7 +2,16 @@
 
   
 Perl script interface to use cssh cluster servers. It was tested with OSX and csshX, but I think it could work with cssh for linux.  
-  
+
+### Requirements
+
+Install those modules using cpan:
+cpan -i Data::Dumper
+cpan -i use Getopt::Long;
+cpan -i Scalar::Util
+cpan -i Term::ANSIColor
+
+### Configuration
 How to change your */etc/clusters* file  
   
 This is a sample configuration  
