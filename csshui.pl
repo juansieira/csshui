@@ -11,6 +11,7 @@ use Term::ANSIColor qw(:constants);
 
 
 my $clustersfile = "/etc/clusters";
+my $csshbinfile = "/usr/bin/clusterssh"; # Change it with csshX in case of OSX 
 
 open(my $fh, '<:encoding(UTF-8)', $clustersfile) or die "Could not open file '$clustersfile' $!";
 
@@ -59,7 +60,7 @@ if (looks_like_number($option) && ($option > 0 && $option <= scalar(@cluster))) 
     print "\nCluster Name: $cname\n";
     print "Cluster Servers: $cservers\n";
 
-    system('csshX '.$cname);
+    system($csshbinfile.' '.$cname);
 }else{
     if ($option eq "x"){
         exit;

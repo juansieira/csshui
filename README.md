@@ -7,7 +7,7 @@ Perl script interface to use cssh cluster servers. It was tested with OSX and cs
 
 Install those modules using cpan:
 cpan -i Data::Dumper
-cpan -i use Getopt::Long;
+cpan -i Getopt::Long
 cpan -i Scalar::Util
 cpan -i Term::ANSIColor
 
